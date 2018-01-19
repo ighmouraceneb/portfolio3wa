@@ -1,0 +1,118 @@
+/*
+* home.css
+*/
+.page-content {
+    position: relative;
+    width: 100%;
+    background: #fefefe;
+    height: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.home-head{
+
+    overflow: hidden;
+}
+.home-head .home-head-column{
+    float: left;
+    width: 47rem;
+
+}
+.home-head .home-head-column a{
+    color: #0085b6;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.home-head .home-head-column .image-web{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.6)),url(https://silex-id.com/wp-content/uploads/2016/10/dev_silexid-870x430.png);
+    height: 600px;
+    
+}
+.home-head .home-head-column .image-web .home-head-title {
+    color: #75a29f;
+}
+.home-head .home-head-column .home-head-image,
+.home-head .home-head-column .image-formation,
+.home-head .home-head-column .souscription {
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+}
+.home-head .home-head-column .home-head-image:hover,
+.home-head .home-head-column .image-formation hover,
+.home-head .home-head-column .souscription:hover {
+    filter: alpha(opacity=50);
+    opacity: .9;
+}
+.home-head .home-head-column .home-head-content{
+    position: absolute;
+    max-width: 400px;
+    padding: 0 30px;
+    bottom : 30px;
+}
+.home-head .home-head-column .home-head-title{
+    color: #c94e4b;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin: 0;
+    line-height: 36px;
+    
+}
+
+.home-head .home-head-column .home-head-description{
+    color : #fff;
+}
+
+.home-head .home-head-column:nth-child(2){
+  
+}
+.home-head .home-head-column .image-formation{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.8)),url(https://i.ytimg.com/vi/kLFlPEBFUIM/maxresdefault.jpg);
+    height: 400px;
+}
+
+
+
+.home-head .home-head-column .souscription {
+    background: #75a29f;
+    height: 200px;
+    
+}
+.home-head .home-head-column .souscription .home-head-title {
+    color: #fff;
+}
+.home-head .home-head-column button{
+    background: white;
+    color: #49b293;
+    border-radius: 4px;
+    padding: 8px 0 8px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 350px;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: .9rem;
+}
