@@ -1,6 +1,13 @@
 /*
 * home.css
 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?#') format('eot'), 
+       url('../fonts/icomoon.woff') format('woff'), 
+       url('../fonts/icomoon.ttf') format('truetype'); 
+}
+
 .page-content {
     position: relative;
     width: 100%;
@@ -23,7 +30,7 @@
     -ms-flex-align: center;
     align-items: center;
 }
- .home-head-skill:before{
+/* .home-head-skill:before{
     content: "";
     width: 100%;
     height: 90rem;
@@ -36,14 +43,14 @@
     left: 0;
     -webkit-transform: skew(0deg,-15deg);
     transform: skew(0deg,-15deg);
-}
+}*/
 
 /************************************************************
                         Home Head
 *************************************************************/
 .home-head{
-
     overflow: hidden;
+    background: #000;
 }
 .home-head .home-head-column{
     float: left;
@@ -73,20 +80,10 @@
     background-repeat: no-repeat;
     -webkit-transition: opacity 0.25s ease-in-out;
     transition: opacity 0.25s ease-in-out;
-    border-radius: 1rem;
+    
     
 }
-.home-head .home-head-column .image-formation,
-.home-head .home-head-column .souscription {
-    margin-left: .8rem;
-}
-.home-head .home-head-column .image-formation{
-    border-radius: 1rem 1rem 0 0;
-    
-}
-.home-head .home-head-column .souscription{
-    border-radius: 0 0 1rem 1rem;
-}
+
 .home-head .home-head-column .home-head-image:hover,
 .home-head .home-head-column .image-formation hover,
 .home-head .home-head-column .souscription:hover {
@@ -150,13 +147,11 @@
 /************************************************************
                         Home Skills
 *************************************************************/
-.home-skill {
 
-}
 .home-skill .home-skill-content{
     margin-top: 5rem;
-    color: #fff;
-     text-align: center;
+   overflow: hidden;
+     
     
 
     
@@ -164,30 +159,92 @@
 .home-skill .home-skill-content .home-skill-title {
    
     font-size: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
 
-.home-skill .home-skill-ligne-image {
-    text-align: center;
-    margin: 2rem 0;
-}
-.home-skill .home-skill-content .skills{
-    overflow :hidden;
-        flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.home-skill .home-skill-content .home-skill-column{
+.home-skill .home-skill-content .home-skill-column:nth-child(2){
     float: left;
-    width: 25rem;
+    width: 27rem;
+}
+.home-skill .home-skill-content .home-skill-column .home-skill-image{
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.6)),url(https://s.aolcdn.com/dims-shared/dims3/GLOB/crop/3863x2576+0+1/resize/1600x1067!/format/jpg/quality/85/https://s.aolcdn.com/hss/storage/midas/c8049c30a98e0a862de69d097bac07d9/204396275/519161884.jpg);
+    height: 752px;
+    width: 60%;
+    left: 38rem;
     
 }
-.home-skill .home-skill-content .home-skill-column h3{
-    margin-bottom: 5rem;
+
+.home-skill .home-skill-content .home-skill-column .home-skill-image img {
+    width: 100%;
 }
-.home-skill .home-skill-content .home-skill-column i{
-    font-size: 40px;
-    line-height: 60px;
-    margin: 20px;
+.home-skill .home-skill-content .home-skill-column.skills {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    min-height: 27rem;
+    padding: 9rem;
+    top: -6rem;
+    left: 1rem;
+    box-shadow: 0 0 1.3rem 0 rgba(0,0,0,.13);
+
+}
+.home-skill-column h3 {
+    margin-bottom: 4rem;
+    font-family: Butler;
+    color: #75a29f;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: -.036rem;
+}
+.home-skill-column ul li .skill-title {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: #c94e4b70;
+    padding: 1.6rem 0;
+    transition: all .4s ease-in-out;
+    border-top: .1rem solid #75a29f69;
+    cursor: pointer;
+}
+.home-skill-column ul li .skill-title:after{
+    content: "\ea3e";
+    font-family: icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.home-skill-column ul li .skill-title:hover {
+     color: #c94e4b;
+}
+.home-skill-column ul li .skill-title h2{
+    letter-spacing: -.02rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+.home-skill-column ul li .presentation-integration p,
+.home-skill-column ul li .presentation-developpement p,
+.home-skill-column ul li .presentation-outils p {
+    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -.016rem
 }
