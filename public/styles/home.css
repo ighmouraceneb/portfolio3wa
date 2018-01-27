@@ -156,6 +156,13 @@
 
     
 }
+.home-skill .home-skill-content .home-skill-title h2 {
+    border-bottom: 0.4rem solid #75a29f;
+    width: 100%;
+    display: initial;
+    padding: 1rem;
+    text-transform: uppercase;
+}
 .home-skill .home-skill-content .home-skill-title {
    
     font-size: 2rem;
