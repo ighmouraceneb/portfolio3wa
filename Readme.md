@@ -4,7 +4,7 @@ Ce projet constitue une application des compétences apprises lors de ma formati
 
 Il constituera aussi un projet de validation de ma formation. 
 
-## Mon Portfolio :
+## Compétences et outils :
  Les compétences et outils utlisés pour réaliser ce projet :
  1- Compétences : 
  
@@ -13,3 +13,4 @@ Il constituera aussi un projet de validation de ma formation.
   + Javascript / Jquery
   + Php 
   + Sql
+  + GitHub
