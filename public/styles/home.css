@@ -54,7 +54,7 @@
 }
 .home-head .home-head-column{
     float: left;
-    width: 47rem;
+    width: 50%;
 
 }
 .home-head .home-head-column a{
@@ -85,7 +85,7 @@
 }
 
 .home-head .home-head-column .home-head-image:hover,
-.home-head .home-head-column .image-formation hover,
+.home-head .home-head-column .image-formation:hover,
 .home-head .home-head-column .souscription:hover {
     filter: alpha(opacity=50);
     opacity: .9;
@@ -148,14 +148,12 @@
                         Home Skills
 *************************************************************/
 
-.home-skill .home-skill-content{
+.home-skill .home-skill-content {
     margin-top: 5rem;
+    margin-bottom: 5rem;
    overflow: hidden;
-     
-    
-
-    
 }
+
 .home-skill .home-skill-content .home-skill-title h2 {
     border-bottom: 0.4rem solid #75a29f;
     width: 100%;
@@ -163,6 +161,7 @@
     padding: 1rem;
     text-transform: uppercase;
 }
+
 .home-skill .home-skill-content .home-skill-title {
    
     font-size: 2rem;
@@ -170,11 +169,12 @@
     text-align: center;
 }
 
-.home-skill .home-skill-content .home-skill-column:nth-child(2){
+.home-skill .home-skill-content .home-skill-column:nth-child(2) {
     float: left;
     width: 27rem;
 }
-.home-skill .home-skill-content .home-skill-column .home-skill-image{
+
+.home-skill .home-skill-content .home-skill-column .home-skill-image {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -190,6 +190,7 @@
 .home-skill .home-skill-content .home-skill-column .home-skill-image img {
     width: 100%;
 }
+
 .home-skill .home-skill-content .home-skill-column.skills {
     background: #fff;
     position: relative;
@@ -210,6 +211,7 @@
     line-height: 3.5rem;
     letter-spacing: -.036rem;
 }
+
 .home-skill-column ul li .skill-title {
     display: block;
     position: relative;
@@ -220,7 +222,8 @@
     border-top: .1rem solid #75a29f69;
     cursor: pointer;
 }
-.home-skill-column ul li .skill-title:after{
+
+.home-skill-column ul li .skill-title:after {
     content: "\ea3e";
     font-family: icomoon!important;
     speak: none;
@@ -237,18 +240,21 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 .home-skill-column ul li .skill-title:hover {
      color: #c94e4b;
 }
+
 .skill-title-color {
     color: #c94e4b!important;
 }
-.home-skill-column ul li .skill-title h2{
+.home-skill-column ul li .skill-title h2 {
     letter-spacing: -.02rem;
     font-size: 1.2rem;
     line-height: 1rem;
     font-weight: 400;
 }
+
 .home-skill-column ul li .presentation-integration p,
 .home-skill-column ul li .presentation-developpement p,
 .home-skill-column ul li .presentation-outils p {
@@ -276,12 +282,15 @@
     margin: 1rem 0;
     transition: 0.5s;
 }
+
 .home-skill-column ul li .btn-skill span {
     transition: 0.5s;
 }
+
 .home-skill-column ul li .btn-skill:hover span {
   padding-right: 25px;
 }
+
 .home-skill-column .btn-skill-animate:before {
     content: "\ea3c";
     font-family: icomoon!important;
@@ -299,4 +308,93 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: 0.5s;
+}
+
+/************************************************************
+                        Home Portfolio
+*************************************************************/
+.home-portfolio-content {
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+}
+.home-portfolio-content .home-portfolio-title {
+    
+    position: absolute;
+    max-width: 15rem;
+    font-family: Butler;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    left: 24rem;
+    text-transform: uppercase;
+}
+
+
+.home-portfolio-content .home-portfolio-column {
+    width: 50%;
+    float: right;
+    margin: 5rem 5rem 0;
+}
+
+
+.home-portfolio-content .home-portfolio-column:nth-child(3) {
+    width: 29%;
+    float: right;
+    margin-top: 27rem;
+}
+
+
+.home-portfolio-content .home-portfolio-column .projet-description {
+   background-color: #000;
+   
+}
+
+
+.home-portfolio-content .home-portfolio-column .projet-description img {
+    width: 100%;
+    background-size: cover;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    margin-bottom: -2px;
+    cursor: pointer;
+    
+    
+}
+
+
+.home-portfolio-content .home-portfolio-column .projet-description img:hover {
+
+    filter: alpha(opacity=50);
+    opacity: 0.3;
+    
+}
+
+
+
+.home-portfolio-content .home-portfolio-column .projet-info {
+
+    z-index: 2;
+    opacity: 0;
+    -webkit-transform: scale(.96) translateX(62%) translateY(10%) translateZ(2rem);
+    transform: scale(.96) translateX(62%) translateY(10%) translateZ(2rem);
+    transition: all .8s cubic-bezier(.42,0,0,1);
+   
+    
+}
+
+
+.home-portfolio-content .home-portfolio-column .projet-info .title {
+
+    font-size: 1.4rem;
+}
+.info-hover {
+    opacity: 1!important;
+
+}
+
+.home-portfolio-content .home-portfolio-column .projet-resume-info .projet-info:hover {
+    opacity: 1;
+    transform: scale(1) translateX(-50%) translateY(-50%) translateZ(2rem);
+    
 }
