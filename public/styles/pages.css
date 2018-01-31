@@ -1,0 +1,112 @@
+.container {
+    width: 995px;
+    margin: 0 auto;
+}
+
+.portfolio-projet {
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+
+.portfolio-projet .title {
+    margin: 5rem auto;
+    text-align: center;
+     font-family: Butler;
+}
+.portfolio-projet .title h1 {
+    text-align: center;
+    font-size: 2.4rem;
+   
+}
+.portfolio-projet .title p {
+    text-transform: uppercase;
+    padding: 1rem 0;
+    letter-spacing: 0.1em;
+}
+.portfolio-projet .portfolio-projet-column {
+    float: left;
+    width: 40%;
+    padding: 2rem;
+    
+}
+
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-image {
+    height: 35rem;
+}
+
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-image img {
+    width: 100%;
+}
+
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description {
+    color: #737373
+}
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description ul li {
+    margin: 2rem auto;
+}
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description p {
+    line-height: 1.5rem;
+    text-align: justify;
+    
+  
+}
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description span {
+    display: block;
+    padding: 0.7rem 0;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description .btn-skill {
+    background-color: #202020;
+    padding: .1rem 1rem;
+    font-size: .6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .24rem;
+    line-height: 1.8rem;
+    border-radius: 0;
+    position: relative;
+    display: inline-block;
+    white-space: normal;
+    margin: 1rem 0;
+    transition: 0.5s;
+}
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description .btn-skill span {
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description .btn-skill:hover span {
+  padding-right: 25px;
+}
+
+
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description .btn-skill-animate:before {
+    content: "\ea3c";
+    font-family: icomoon!important;
+    speak: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
