@@ -2,29 +2,35 @@
     width: 995px;
     margin: 0 auto;
 }
-
-.portfolio-projet {
+img {
+    width: 100%;
+}
+.portfolio-projet, 
+.competence-projet {
     overflow: hidden;
     font-size: 0.8rem;
 }
 
 
-.portfolio-projet .title {
+.portfolio-projet .title,
+.competence-projet .title {
     margin: 5rem auto;
     text-align: center;
      font-family: Butler;
 }
-.portfolio-projet .title h1 {
+.portfolio-projet .title h1 ,
+.competence-projet .title h1 {
     text-align: center;
     font-size: 2.4rem;
    
 }
-.portfolio-projet .title p {
+.portfolio-projet .title p,
+.competence-projet .title p {
     text-transform: uppercase;
     padding: 1rem 0;
     letter-spacing: 0.1em;
 }
-.portfolio-projet .portfolio-projet-column {
+.portfolio-projet .portfolio-projet-column , .competence-projet .competence-projet-column {
     float: left;
     width: 40%;
     padding: 2rem;
@@ -32,31 +38,36 @@
 }
 
 
-.portfolio-projet .portfolio-projet-column .portfolio-projet-image {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-image,
+.competence-projet .competence-projet-column .competence-projet-image {
     height: 35rem;
 }
 
 
-.portfolio-projet .portfolio-projet-column .portfolio-projet-image img {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-image img,
+.competence-projet .competence-projet-column .competence-projet-image img {
     width: 100%;
 }
 
 
-.portfolio-projet .portfolio-projet-column .portfolio-projet-description {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description,
+.competence-projet .competence-projet-column .competence-projet-description {
     color: #737373
 }
 
-.portfolio-projet .portfolio-projet-column .portfolio-projet-description ul li {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description ul li,
+.competence-projet .competence-projet-column .competence-projet-description ul li {
     margin: 2rem auto;
 }
-.portfolio-projet .portfolio-projet-column .portfolio-projet-description p {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description p, 
+.competence-projet .competence-projet-column .competence-projet-description p {
     line-height: 1.5rem;
     text-align: justify;
-    
-  
+
 }
 
-.portfolio-projet .portfolio-projet-column .portfolio-projet-description span {
+.portfolio-projet .portfolio-projet-column .portfolio-projet-description span,
+.competence-projet .competence-projet-column .competence-projet-description span {
     display: block;
     padding: 0.7rem 0;
     font-weight: bold;
@@ -109,4 +120,14 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: 0.5s;
+}
+
+/***************************************************************
+                        PAGE COMPETENCES
+****************************************************************/
+
+
+.competence-projet .competence-projet-column .competence-projet-description ul li i {
+    font-size: 1.5rem;
+    padding: 1rem;
 }
