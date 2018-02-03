@@ -107,6 +107,39 @@ ICON.mouseout(function(){
         "transition": "0.5s",
     })
 });  
+ const FAB = $(".fab");
+FAB.hover(function(){
+    
+    const TOOLTIP = $(this).attr('tooltip');
+    
+    if(TOOLTIP == "") return false;
+    
+    $(this).append('<span class="infobulle"></span>');
+    
+    const INFOBULLE = $(this).children('.infobulle');
+    INFOBULLE.append(TOOLTIP);
+    
+    const TOP = $(this).offset().top-$(this).height()/2;
+    const LEFT = $(this).offset().left+$(this).width()/2-INFOBULLE.width();
+    $(this).css({
+        "font-size":"3rem",
+        "transition": "0.5s",
+    })
+    INFOBULLE.css({
+       top: TOP,
+       left: LEFT,
+
+    });
+});
+    
+FAB.mouseout(function(){
+
+    $(this).children('.infobulle').remove();
+        $(this).css({
+        "font-size":"2rem",
+        "transition": "0.5s",
+    })
+});  
  
     
     /**

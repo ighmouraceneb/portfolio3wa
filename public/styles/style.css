@@ -24,3 +24,36 @@ a{
     height: 9rem;
 
 }
+.footer .footer-line {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    overflow: hidden;
+    font-size: 0.8rem;
+    
+    
+}
+.footer .footer-line .footer-column {
+    float: left;
+    width: 40%;
+    padding: 1rem 0;
+}
+.footer .footer-line .footer-column:nth-child(2) {
+    text-align: right;
+     width: 60%;
+    padding: 0;
+}
+.footer .footer-line .footer-column ul,
+.footer .footer-line .footer-column ul li {
+    display: inline-block;
+}
+
+.footer .footer-line .footer-column ul li {
+    padding: 1rem 0;
+}
+
+.footer .footer-line .footer-column ul li .fab{
+    font-size: 2rem;
+    color: #000;
+    padding-right: 0.8rem;
+}
