@@ -151,10 +151,11 @@
 .home-skill .home-skill-content {
     margin-top: 5rem;
     margin-bottom: 5rem;
-   overflow: hidden;
+    overflow: hidden;
 }
 
-.home-skill .home-skill-content .home-skill-title h2 {
+.home-skill .home-skill-content .home-skill-title h2,
+.home-contact-title h2{
     border-bottom: 0.4rem solid #75a29f;
     width: 100%;
     display: initial;
@@ -162,7 +163,8 @@
     text-transform: uppercase;
 }
 
-.home-skill .home-skill-content .home-skill-title {
+.home-skill .home-skill-content .home-skill-title,
+.home-contact-title {
    
     font-size: 2rem;
     margin-bottom: 10rem;
@@ -265,7 +267,9 @@
     letter-spacing: -.016rem
 }
 
-.home-skill-column ul li .btn-skill {
+.home-skill-column ul li .btn-skill,
+.home-portfolio-content .btn-portfolio,
+.contact-form .btn-msg {
 
     background-color: #75a29f;
     padding: .5rem 2rem;
@@ -283,15 +287,20 @@
     transition: 0.5s;
 }
 
-.home-skill-column ul li .btn-skill span {
+.home-skill-column ul li .btn-skill span,
+.home-portfolio-content .btn-portfolio span,
+.contact-form .btn-msg span {
     transition: 0.5s;
 }
 
-.home-skill-column ul li .btn-skill:hover span {
-  padding-right: 25px;
+.home-skill-column ul li .btn-skill:hover span,
+.home-portfolio-content .btn-portfolio:hover span {
+  padding-right: 2rem;
 }
 
-.home-skill-column .btn-skill-animate:before {
+.home-skill-column .btn-skill-animate:before,
+.home-portfolio-content .btn-skill-animate:before,
+.contact-form .btn-skill-animate:before {
     content: "\ea3c";
     font-family: icomoon!important;
     speak: none;
@@ -317,6 +326,7 @@
     margin: 2rem auto;
     position: relative;
     overflow: hidden;
+    margin-bottom: 9rem;
 }
 .home-portfolio-content .home-portfolio-title {
     
@@ -397,4 +407,95 @@
     opacity: 1;
     transform: scale(1) translateX(-50%) translateY(-50%) translateZ(2rem);
     
+}
+.home-portfolio-content .btn-portfolio {
+left: 76rem;
+}
+
+
+/************************************************************
+                        Home CONTACT
+*************************************************************/
+.contact-container {
+    
+    position: relative;
+}
+.contact-container:before {
+    background: linear-gradient(160deg,#ffffff,#ececec);
+    -webkit-transform: skew(0deg,-15deg);
+    transform: skew(0deg,-4deg);
+    position: absolute;
+    width: 200%;
+    height:  51.2rem;
+    left: -43.8rem;
+    z-index: -1;
+    content:'';
+}
+
+.contact-container .contact-form {
+    margin: 3rem auto;
+    width: 570px;
+    display: block;
+    position: relative;
+}
+
+.contact-container .contact-form .input-block {
+    background-color: #d6d5d5;
+    border: solid 1px #d6d5d5;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.contact-container .contact-form input, 
+.contact-container .contact-form textarea {
+    outline-style: none;
+}
+.focus {
+    background-color: #fff!important;
+    border: solid 1px darken( #d6d5d5, 10%)!important;
+    
+}
+
+
+.contact-container .contact-form .input-block label {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    z-index: 1;
+    color: #333;
+    font-size: 14px;
+    line-height: 10px
+}
+
+
+.contact-container .contact-form .input-block label:focus {
+    top: 0;
+}
+
+.contact-container .contact-form .input-block .form-control {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #333;
+    width: 36rem;
+}
+
+.contact-form .btn-msg {
+    border: none;
+}
+
+.contact-form .btn-msg:hover {
+    padding-right: 3rem;
 }
